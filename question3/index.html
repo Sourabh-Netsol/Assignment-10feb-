@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="name-container">
+            <ul>
+                <li>Name1</li>
+                <li>Name2</li>
+                <li>Name3</li>
+                <li>Name4</li>
+                <li>Name5</li>
+                <li>Name6</li>
+                <li>Name7</li>
+                <li>Name8</li>
+                <li>Name9</li>
+                <li>Name10</li>
+            </ul>
+        </div>
+        <button class="append">Append</button>
+        <button class="prepend">Prepend</button>
+        <div class="second-name-container">
+            <ul></ul>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+        $(".append").click(function () {
+          $(".second-name-container ul").append($( ".name-container ul li" ).first());
+        });
+        $(".prepend").click(function () {
+          $(".name-container ul").prepend($( ".second-name-container ul li" ).first());
+        });
+      });
+    </script>
+</html>

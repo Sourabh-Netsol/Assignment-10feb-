@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #f3dede;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.name-container{
+    /* width: 50%; */
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-name-container{
+    /* width: 50%; */
+    border: 1px solid black;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.append{
+    padding: 10px;
+}
+.prepend{
+    padding: 10px;
+}
+
+
+ul li{
+    list-style: none;
+}

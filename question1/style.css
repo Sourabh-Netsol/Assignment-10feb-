@@ -1,0 +1,28 @@
+.div1 {
+    height: 500px;
+    width: 100%;
+    animation-name: img_example;
+    animation-duration: 10s;
+}
+
+@keyframes img_example {
+    0% {
+        background-image: url('3.jpg');
+    }
+
+    25% {
+        background-image: url('4.jpg');
+    }
+
+    50% {
+        background-image: url('bb.jpg');
+    }
+
+    75% {
+        background-image: url('n.jpg');
+    }
+
+    100% {
+        background-image: url('4.jpg');
+    }
+}
